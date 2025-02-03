@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N Vamsi Teja - Associate Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background: #34495e;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #ddd;
+            opacity: 0; /* Start with sections hidden */
+            transform: translateY(50px); /* Start slightly below */
+            transition: all 0.5s ease-out;
+        }
+
+        /* Adding fade-in effect for sections */
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .education-item, .job-item {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Resume Section */
+        .resume-download {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            opacity: 0; /* Start with the button hidden */
+            transform: translateY(20px); /* Start slightly below */
+            transition: all 0.5s ease-out;
+        }
+
+        /* Adding fade-in effect for buttons */
+        .btn.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Timeline Style */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #3498db;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>N Vamsi Teja</h1>
+            <p>Associate Software Engineer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#resume">Resume</a>
+        </div>
+    </nav>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Highly motivated and results-oriented Software Engineer with 1+ years of experience in backend development and a passion for creating seamless user experiences. Proven ability to design, implement, and maintain scalable applications. Proficient in JavaScript, TypeScript, Node.js, and React.js, with a strong understanding of responsive design and modern CSS frameworks. Eager to contribute to a dynamic team and deliver high-quality, user-centric products.</p>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Post Graduation</h3>
+                <p>VIT University | 2017-2022</p>
+                <p>M.tech Integrated Software Engineering</p>
+            </div>
+            <div class="education-item">
+                <h3>Senior Secondary Education</h3>
+                <p>Sri Chaitanya Junior College | 2015-2017</p>
+                <p>MPC</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="job-item">
+                <h3>Associate</h3>
+                <p>Nokia Solutions and Networks Private limited. | 2022-2023</p>
+                <ul>
+                    <li>Developed and implemented backend CGI's for Nokia Wifi Mobile App, T-Mobile App, and WEBGUI using Node.js and potentially Express.js, enhancing API integrations and data flow.</li>
+                    <li>Designed and implemented RESTful APIs using Node.js and potentially a database like MySQL or PostgreSQL to support mobile app functionality.</li>
+                    <li>Contributed to the development of ONT's (Routers) and Beacon's (wifi extenders), focusing on software optimization and performance, potentially using performance profiling tools.</li>
+                    <li>Integrated frontend components potentially using React.js or similar with backend APIs using Node.js to deliver seamless user experiences.</li>
+                    <li>Collaborated with cross-functional teams designers, product managers, and backend engineers using Agile methodologies to deliver features iteratively</li>
+                    <li>Performed code reviews and implemented unit and integration testing using Jest or Mocha to ensure code quality and application performance.</li>
+                    <li>Troubleshot and debugged complex issues in existing applications, improving application stability and user satisfaction, using debugging tools and logs.</li>
+                    <li>Documented API specifications using tools like Swagger or OpenAPI. Monitored application performance and implemented optimizations to improve scalability and response times</li>
+                    <li>Contributed to the CI/CD pipeline, automating build, test, and deployment processes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background-color: #f8f9fa; padding: 3rem 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Skills</h2>
+            <div style="display: grid; 
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+                        gap: 1.5rem; 
+                        padding: 0 1rem;">
+                
+                <!-- Technical Skills -->
+                <div style="background: white; 
+                            padding: 1.5rem; 
+                            border-radius: 8px; 
+                            box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">Technical Skills</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">HTML5</li>
+                        <li style="padding: 0.5rem 0;">CSS3</li>
+                        <li style="padding: 0.5rem 0;">JavaScript</li>
+                        <li style="padding: 0.5rem 0;">Python</li>
+                        <li style="padding: 0.5rem 0;">React.js</li>
+                        <li style="padding: 0.5rem 0;">Node.js</li>
+                        <li style="padding: 0.5rem 0;">SQL</li>
+                    </ul>
+                </div>
+
+                <!-- Professional Skills -->
+                <div style="background: white; 
+                            padding: 1.5rem; 
+                            border-radius: 8px; 
+                            box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">Professional Skills</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">Project Management</li>
+                        <li style="padding: 0.5rem 0;">Team Collaboration</li>
+                        <li style="padding: 0.5rem 0;">Problem Solving</li>
+                        <li style="padding: 0.5rem 0;">Communication</li>
+                        <li style="padding: 0.5rem 0;">Agile Methodology</li>
+                        <li style="padding: 0.5rem 0;">Analytical Skills</li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div style="background: white; 
+                            padding: 1.5rem; 
+                            border-radius: 8px; 
+                            box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">Tools & Technologies</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.5rem 0;">Git & GitHub</li>
+                        <li style="padding: 0.5rem 0;">VS Code</li>
+                        <li style="padding: 0.5rem 0;">JIRA</li>
+                        <li style="padding: 0.5rem 0;">Postman</li>
+                        <li style="padding: 0.5rem 0;">CI/CD</li>
+                        <li style="padding: 0.5rem 0;">Unix & Linux</li>
+                        <li style="padding: 0.5rem 0;">Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-download">
+        <div class="container">
+            <h2>Download Resume</h2>
+            <a href="C:\Users\Admin\Downloads\VamsiTejaResume.pdf" class="btn" download>Download PDF</a>
+        </div>
+    </section>
+
+    <footer style="background-color: #2c3e50; color: white; padding: 2rem 0; margin-top: 2rem;">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px; margin: 10px;">
+                    <h3>Contact Information</h3>
+                    <p>Email: vamsitean2018@gmail.com</p>
+                    <p>Phone: +91 93907 13703</p>
+                </div>
+                
+                <div style="flex: 1; min-width: 200px; margin: 10px;">
+                    <h3>Social Media</h3>
+                    <p>
+                        <a href="https://www.linkedin.com/in/n-vamsi-teja-0a069316a/" 
+                           style="color: white; text-decoration: none; margin-right: 10px;">
+                            LinkedIn
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; border-top: 1px solid #444; padding-top: 1rem;">
+                <p>&copy; 2023 N Vamsi Teja. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation when section comes into view
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const btn = document.querySelector('.btn');
+            
+            // For sections
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    section.classList.add('visible');
+                }
+            });
+
+            // For button
+            const btnRect = btn.getBoundingClientRect();
+            if (btnRect.top < window.innerHeight) {
+                btn.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html>
